@@ -10,7 +10,7 @@ import Work from "./components/Work/Work";
 function App() {
   return (
     <div className="bg-[#050414]">
-      <div className=""></div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px, transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)]bg-[size:14px_24px][mask"></div>
       <div className="relative pt-20">
         <Navbar />
         <About />
