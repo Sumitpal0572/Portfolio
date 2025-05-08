@@ -14,4 +14,18 @@ export const SkillsInfo = [
             { name: 'Chakra UI' },
         ],
     },
+
+    {
+        title: 'Backend',
+        skills: [
+            { name: 'Node Js' },
+            { name: 'Mongoose' },
+            { name: 'Express Js' },
+            { name: 'SQL' },
+            { name: 'Mongo DB' },
+            { name: 'Firebase' },
+            { name: 'MySQL' },
+
+        ],
+    },
 ]
