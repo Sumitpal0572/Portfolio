@@ -22,6 +22,15 @@ const Navbar = () => {
           <span className="text-white">Pal</span>
           <span className="text-[#8245ec]">&gt;</span>
         </div>
+
+        {/* Daesktop menu  */}
+        <ul className="">
+          {menuItems.map((item) => (
+            <li key={item.id} className="">
+              <button>{item.label}</button>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
