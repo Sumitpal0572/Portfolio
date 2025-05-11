@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useEffect } from "react";
 
 const Navbar = () => {
-  const [isOpen, setisOpen] = useState(false);
-  const [activeSection, setactiveSection] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handlescroll = () => {
+      isScrolled(wndow.scrollY > 50);
+    };
+  });
 
   const handleMenuItemsClick = (sectionId) => {
-    setactiveSection(sectionId);
+    setActiveSection(sectionId);
+    setIsOpen(false);
   };
 
   const menuItems = [
