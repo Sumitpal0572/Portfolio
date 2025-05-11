@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
 
         {/* Daesktop menu  */}
-        <ul className="">
+        <ul className="md:flex space-x-8 text-grey-300">
           {menuItems.map((item) => (
             <li key={item.id} className="">
               <button>{item.label}</button>
