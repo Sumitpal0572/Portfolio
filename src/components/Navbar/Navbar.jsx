@@ -8,11 +8,17 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
 
+  // check scroll and change navbar background
+
   useEffect(() => {
     const handlescroll = () => {
       isScrolled(wndow.scrollY > 50);
     };
-  });
+    window.addEventListener("scroll", handlescroll);
+    return () => window.removeEventListener("scroll", handlescroll);
+  }, []);
+
+  // Smooth scroll function
 
   const handleMenuItemsClick = (sectionId) => {
     setActiveSection(sectionId);
@@ -28,7 +34,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-transparent">
+    <nav
+      className={`fixed w-full top-0 z-50 transtition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
+        isScrolled
+          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+          : "bg-transparent"
+      }`}
+    >
       <div className="text-white py-5 flex justify-between items-center">
         {/*   logo */}
         <div className="text-lg font-semibold cursor-pointer">
@@ -40,7 +52,7 @@ const Navbar = () => {
         </div>
 
         {/* Daesktop menu  */}
-        <ul className="md:flex space-x-8 text-gray-300">
+        <ul className="hidden md:flex space-x-8 text-gray-300">
           {menuItems.map((item) => (
             <li
               key={item.id}
@@ -55,6 +67,17 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        {/* social media icons  */}
+
+        <div className="hidden md-flex space-x-4 ">
+          <a
+            href="https://github.com/Sumitpal0572/Portfolio"
+            target="_black"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          ></a>
+        </div>
       </div>
     </nav>
   );
