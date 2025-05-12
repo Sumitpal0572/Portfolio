@@ -70,13 +70,24 @@ const Navbar = () => {
 
         {/* social media icons  */}
 
-        <div className="hidden md-flex space-x-4 ">
+        <div className="hidden md:flex space-x-4 ">
           <a
             href="https://github.com/Sumitpal0572/Portfolio"
             target="_black"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
-          ></a>
+          >
+            <FaGithub size={24} />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sumit-kumar-pal-6b102b204/"
+            target="_black"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaLinkedin size={24} />
+          </a>
         </div>
       </div>
     </nav>
