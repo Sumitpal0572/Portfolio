@@ -12,8 +12,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const handlescroll = () => {
-      isScrolled(wndow.scrollY > 50);
+      setIsScrolled(window.scrollY > 50);
     };
+
     window.addEventListener("scroll", handlescroll);
     return () => window.removeEventListener("scroll", handlescroll);
   }, []);
@@ -35,7 +36,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full top-0 z-50 transtition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
+      className={`fixed w-full top-0 z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
         isScrolled
           ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
           : "bg-transparent"
@@ -51,12 +52,12 @@ const Navbar = () => {
           <span className="text-[#8245ec]">&gt;</span>
         </div>
 
-        {/* Daesktop menu  */}
+        {/* Desktop menu  */}
         <ul className="hidden md:flex space-x-8 text-gray-300">
           {menuItems.map((item) => (
             <li
               key={item.id}
-              className={`cursor:default hover:text-[#8245ec] ${
+              className={`cursor-pointer hover:text-[#8245ec] ${
                 activeSection === item.id ? "text-[#8245ec]" : ""
               }
             `}
@@ -88,6 +89,22 @@ const Navbar = () => {
           >
             <FaLinkedin size={24} />
           </a>
+        </div>
+
+        {/* mobile toggle menu  */}
+
+        <div className="md:hidden">
+          {isOpen ? (
+            <FiX
+              className="text-3xl text-[#8245ec] cursor-pointer"
+              onClick={() => setIsOpen(false)}
+            />
+          ) : (
+            <FiMenu
+              className="text-3xl text-[#8245ec] cursor-pointer"
+              onClick={() => setIsOpen(true)}
+            />
+          )}
         </div>
       </div>
     </nav>
