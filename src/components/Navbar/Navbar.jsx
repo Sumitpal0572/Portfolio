@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { IoCloseSharp } from "react-icons/io5";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useEffect } from "react";
 
@@ -95,7 +96,7 @@ const Navbar = () => {
 
         <div className="md:hidden">
           {isOpen ? (
-            <FiX
+            <IoCloseSharp
               className="text-3xl text-[#8245ec] cursor-pointer"
               onClick={() => setIsOpen(false)}
             />
@@ -120,9 +121,30 @@ const Navbar = () => {
                   activeSection === item.id ? "text-[#8245ec]" : ""
                 }`}
               >
-                <button>{item.label}</button>
+                <button onClick={() => handleMenuItemsClick(item.id)}>
+                  {item.label}
+                </button>
               </li>;
             })}
+            <div className="flex space-x-4">
+              <a
+                href="https://github.com/Sumitpal0572/Portfolio"
+                target="_black"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                <FaGithub size={24} />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/sumit-kumar-pal-6b102b204/"
+                target="_black"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                <FaLinkedin size={24} />
+              </a>
+            </div>
           </ul>
         </div>
       )}
