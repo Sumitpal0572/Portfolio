@@ -35,6 +35,15 @@ const About = () => {
               }}
             ></ReactTypingEffect>
           </h3>
+
+          {/* about me */}
+
+          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            officia distinctio eaque eum odit obcaecati architecto error
+            consequuntur atque doloribus labore vitae laboriosam fugiat, magni
+            aperiam, sequi harum rerum eligendi.
+          </p>
         </div>
       </div>
     </section>
