@@ -44,6 +44,21 @@ const About = () => {
             consequuntur atque doloribus labore vitae laboriosam fugiat, magni
             aperiam, sequi harum rerum eligendi.
           </p>
+
+          {/* button for resume  */}
+
+          <a
+            href="https://drive.google.com/file/d/1g_BMWXz4IH4DrtnzpRNRJJBC-pFLv70F/view?usp=sharing"
+            target="_blank"
+            rel="noopener norefferrer"
+            className="inline-block text-white px-8 py-3 rounded-full text-lg font-bold transition duration-300 transform hover:scale-105 "
+            style={{
+              background: "linear-gradient(90deg, #8245ec, #a855f7)",
+              boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+            }}
+          >
+            Download CV
+          </a>
         </div>
       </div>
     </section>
