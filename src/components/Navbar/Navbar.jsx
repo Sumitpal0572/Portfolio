@@ -25,6 +25,11 @@ const Navbar = () => {
   const handleMenuItemsClick = (sectionId) => {
     setActiveSection(sectionId);
     setIsOpen(false);
+
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const menuItems = [
@@ -96,7 +101,7 @@ const Navbar = () => {
 
         <div className="md:hidden">
           {isOpen ? (
-            <IoCloseSharp
+            <FiX
               className="text-3xl text-[#8245ec] cursor-pointer"
               onClick={() => setIsOpen(false)}
             />
@@ -112,7 +117,7 @@ const Navbar = () => {
       {/* Mobile Menu Items */}
 
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg ">
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden ">
           <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
             {menuItems.map((item) => {
               <li
