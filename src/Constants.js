@@ -33,22 +33,22 @@ export const SkillsInfo = [
     {
         title: 'Languages',
         skills: [
-            { name: 'Javascript' },
-            { name: 'Python' },
-            { name: 'Typescript' },
+            { name: 'Javascript', logo: 'https://cdn.worldvectorlogo.com/logos/javascript-2.svg' },
+            { name: 'Python', logo: 'https://cdn.worldvectorlogo.com/logos/python-5.svg' },
+            { name: 'Typescript', logo: 'https://cdn.worldvectorlogo.com/logos/typescript.svg' },
         ],
     },
 
     {
         title: 'Tools',
         skills: [
-            { name: 'Git' },
-            { name: 'Github' },
-            { name: 'VS Code' },
-            { name: 'Postman' },
-            { name: 'Compass' },
-            { name: 'Vercel' },
-            { name: 'Netlify' },
+            { name: 'Git', logo: 'https://cdn.worldvectorlogo.com/logos/git-icon.svg' },
+            { name: 'Github', logo: 'https://cdn.worldvectorlogo.com/logos/github-icon-1.svg' },
+            { name: 'VS Code', logo: "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" },
+            { name: 'Postman', loog: 'https://cdn.worldvectorlogo.com/logos/postman.svg' },
+            { name: 'Compass', logo: 'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg' },
+            { name: 'Vercel', logo: 'https://cdn.worldvectorlogo.com/logos/vercel.svg' },
+            { name: 'Netlify', logo: 'https://cdn.worldvectorlogo.com/logos/netlify.svg' },
 
         ],
     },
