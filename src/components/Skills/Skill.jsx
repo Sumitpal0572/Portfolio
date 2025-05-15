@@ -31,10 +31,14 @@ const Skill = () => {
             <div className="grid grid-col-2 sm:grid-cols-3 gap-3 w-full">
               {category.skills.map((skills) => (
                 <div
-                  key={Skill.name}
+                  key={skills.name}
                   className="flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:py-2 sm:px-2 text-center"
                 >
-                  <img src="" alt="" className="w-6 h-6 sm:w-8 sm:h-8" />
+                  <img
+                    src={skills.logo}
+                    alt={`${skills.name} logo `}
+                    className="w-6 h-6 sm:w-8 sm:h-8"
+                  />
                 </div>
               ))}
             </div>
