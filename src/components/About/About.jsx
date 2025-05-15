@@ -64,8 +64,16 @@ const About = () => {
 
         {/* right side  */}
 
-        <div className="md:w-1/2 flex justify-center  md:justify-end ">
-          <Tilt className="w-48 h-48 sm:w-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full ">
+        <div className="md:w-1/2 flex justify-center md:justify-end ml-4 md:ml-8 ">
+          <Tilt
+            className="w-48 h-48 sm:w-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full "
+            tiltMaxAngleX={20}
+            tiltMaxAngleY={20}
+            perspective={1000}
+            scale={1.05}
+            transitionSpeed={1000}
+            gyroscope={true}
+          >
             <img
               src="https://avatars.githubusercontent.com/u/148610135?v=4"
               alt="Profile image"
