@@ -13,7 +13,7 @@ export const SkillsInfo = [
             { name: 'Tailwind Css', logo: 'https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg' },
             { name: 'Materail UI', logo: 'https://cdn.worldvectorlogo.com/logos/material-ui-1.svg' },
             { name: 'BootStrap', logo: 'https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg' },
-            { name: 'Chakra UI', logo: '' },
+            { name: 'Chakra UI', logo: 'https://avatars.githubusercontent.com/u/54212428?s=280&v=4' },
         ],
     },
 
@@ -45,7 +45,7 @@ export const SkillsInfo = [
             { name: 'Git', logo: 'https://cdn.worldvectorlogo.com/logos/git-icon.svg' },
             { name: 'Github', logo: 'https://cdn.worldvectorlogo.com/logos/github-icon-1.svg' },
             { name: 'VS Code', logo: "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" },
-            { name: 'Postman', loog: 'https://cdn.worldvectorlogo.com/logos/postman.svg' },
+            { name: 'Postman', logo: 'https://cdn.worldvectorlogo.com/logos/postman.svg' },
             { name: 'Compass', logo: 'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg' },
             { name: 'Vercel', logo: 'https://cdn.worldvectorlogo.com/logos/vercel.svg' },
             { name: 'Netlify', logo: 'https://cdn.worldvectorlogo.com/logos/netlify.svg' },

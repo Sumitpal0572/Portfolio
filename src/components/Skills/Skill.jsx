@@ -12,7 +12,7 @@ const Skill = () => {
         <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2"></div>
         <p className="text-gray-400 text-lg mt-4 font-semibold">
           A Collection of Technical Skills and expertise honed through various
-          projects ad experinces
+          projects ad experiences
         </p>
       </div>
 
