@@ -1,5 +1,6 @@
 import React from "react";
 import { SkillsInfo } from "../../Constants";
+import Tilt from "react-parallax-tilt";
 
 const Skill = () => {
   return (
@@ -28,20 +29,32 @@ const Skill = () => {
             </h3>
 
             {/* skill items 3 per row for larger screen */}
-            <div className="grid grid-col-2 sm:grid-cols-3 gap-3 w-full">
-              {category.skills.map((skills) => (
-                <div
-                  key={skills.name}
-                  className="flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:py-2 sm:px-2 text-center"
-                >
-                  <img
-                    src={skills.logo}
-                    alt={`${skills.name} logo `}
-                    className="w-6 h-6 sm:w-8 sm:h-8"
-                  />
-                </div>
-              ))}
-            </div>
+            <Tilt
+              tiltMaxAngleX={20}
+              tiltMaxAngleY={20}
+              perspective={1000}
+              scale={1.05}
+              transitionSpeed={1000}
+              gyroscope={true}
+            >
+              <div className="grid grid-col-2 sm:grid-cols-3 gap-3 w-full">
+                {category.skills.map((skills) => (
+                  <div
+                    key={skills.name}
+                    className="flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:py-2 sm:px-2 text-center"
+                  >
+                    <img
+                      src={skills.logo}
+                      alt={`${skills.name} logo `}
+                      className="w-6 h-6 sm:w-8 sm:h-8"
+                    />
+                    <span className="text-xs sm:text-sm text-gray-300">
+                      {skills.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </Tilt>
           </div>
         ))}
       </div>

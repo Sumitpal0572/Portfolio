@@ -23,10 +23,10 @@ export const SkillsInfo = [
             { name: 'Node Js', logo: 'https://images-cdn.openxcell.com/wp-content/uploads/2024/07/25090553/nodejs-inner.webp' },
             { name: 'Mongoose', logo: 'https://cdn.worldvectorlogo.com/logos/mongoose-1.svg' },
             { name: 'Express Js', logo: 'https://cdn.prod.website-files.com/6320125ace536b6ad148eca3/66502d746f57d299fe0e0c31_Image%201-Express.js.webp' },
-            { name: 'SQL', logo: 'https://cdn.worldvectorlogo.com/logos/mysql-logo-pure.svg' },
+            { name: 'MySQL', logo: 'https://cdn.worldvectorlogo.com/logos/mysql-logo-pure.svg' },
             { name: 'Mongo DB', logo: 'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1-1.svg' },
             { name: 'Firebase', logo: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg' },
-            { name: 'MySQL', logo: 'https://cdn.worldvectorlogo.com/logos/mysql-4.svg' },
+            { name: 'PostgreSQL', logo: 'https://cdn.worldvectorlogo.com/logos/mysql-4.svg' },
         ],
     },
 
