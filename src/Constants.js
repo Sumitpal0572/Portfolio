@@ -53,3 +53,42 @@ export const SkillsInfo = [
         ],
     },
 ]
+
+
+export const experiences = [
+    {
+        id: 0,
+        img: "",
+        role: "Technical Mentor",
+        company: "Kalvium – RV University, Bangalore",
+        date: "Feb 2024 - May",
+        desc: "Taught BCA 1st and 2nd-year students as per their curriculum, delivering technical education through interactive sessions. Managed daily attendance, assessed tests and assignments, and provided continuous mentorship to enhance students' problem-solving and development skills.",
+        skills: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React JS",
+            "Node JS",
+            "Tailwind CSS",
+            "MongoDb",
+            "Redux",
+            " Next Js",
+        ],
+    },
+    {
+        id: 1,
+        img: "",
+        role: "Web Development Intern",
+        company: "CodeEx Eart",
+        date: "July 2023 - March 2024",
+        desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
+        skills: [
+            "ReactJS",
+            "Redux",
+            "JavaScript",
+            "Tailwind CSS",
+            "HTML",
+            "CSS",
+        ],
+    },
+];
