@@ -97,13 +97,13 @@ export const experiences = [
 export const projects = [
     {
         id: 0,
-        title: "GitHub Profile Detective",
+        title: "TataCliq-Clone",
         description:
-            "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
+            "This project is a frontend clone of the TataCliq e-commerce website built using React and Chakra UI. The app includes features like user authentication (Sign In/Sign Up), a dynamic shopping page with category filters, and a responsive layout.",
         image: "",
-        tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
+        tags: ["CSS", "JavaScript", "React JS", "Chakra Ui"],
         github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-        webapp: "https://githubprofiledetective.netlify.app/",
+        webapp: "https://tata-cliq-clone-n7d4.vercel.app/",
     },
     {
         id: 1,
@@ -112,7 +112,7 @@ export const projects = [
             "A simple and interactive weather application built with React, using the OpenWeatherMap API to fetch real-time weather data based on user input. The app displays the temperature, humidity, wind speed, and weather condition of a given city.",
         image: "",
         tags: ["React JS", "OpenWeatherAPI", "CSS", "JavaScript"],
-        github: "https://github.com/sumitPal0572",
+        github: "https://github.com/SumitPal0572",
         webapp: "",
     },
 
@@ -122,8 +122,8 @@ export const projects = [
         description:
             "A modern, responsive clone of the Lit Vibes landing page built using HTML, CSS, and JavaScript. This project replicates the aesthetic and functional design of the original website with a custom background, interactive footer, and clickable elements like logos and download buttons",
         image: "",
-        tags: ["React JS", "OpenWeatherAPI", "CSS", "JavaScript"],
-        github: "https://github.com/sumitPal0572",
-        webapp: "",
+        tags: ["HTML", "CSS", "JavaScript"],
+        github: "https://github.com/SumitPal0572",
+        webapp: "https://lit-vibes-clone.vercel.app/",
     },
 ];  
