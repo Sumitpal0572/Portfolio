@@ -92,3 +92,38 @@ export const experiences = [
         ],
     },
 ];
+
+
+export const projects = [
+    {
+        id: 0,
+        title: "GitHub Profile Detective",
+        description:
+            "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
+        image: "",
+        tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
+        github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
+        webapp: "https://githubprofiledetective.netlify.app/",
+    },
+    {
+        id: 1,
+        title: "Weather Application",
+        description:
+            "A simple and interactive weather application built with React, using the OpenWeatherMap API to fetch real-time weather data based on user input. The app displays the temperature, humidity, wind speed, and weather condition of a given city.",
+        image: "",
+        tags: ["React JS", "OpenWeatherAPI", "CSS", "JavaScript"],
+        github: "https://github.com/sumitPal0572",
+        webapp: "",
+    },
+
+    {
+        id: 2,
+        title: "Lit Vibes Clone",
+        description:
+            "A modern, responsive clone of the Lit Vibes landing page built using HTML, CSS, and JavaScript. This project replicates the aesthetic and functional design of the original website with a custom background, interactive footer, and clickable elements like logos and download buttons",
+        image: "",
+        tags: ["React JS", "OpenWeatherAPI", "CSS", "JavaScript"],
+        github: "https://github.com/sumitPal0572",
+        webapp: "",
+    },
+];  
