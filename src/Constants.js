@@ -58,7 +58,7 @@ export const SkillsInfo = [
 export const experiences = [
     {
         id: 0,
-        img: "",
+        img: "https://kalvium.com/wp-content/uploads/2023/05/Kalvium-OG.webp",
         role: "Technical Mentor",
         company: "Kalvium – RV University, Bangalore",
         date: "Feb 2024 - May",
@@ -77,9 +77,9 @@ export const experiences = [
     },
     {
         id: 1,
-        img: "",
+        img: "https://media.licdn.com/dms/image/v2/D4D0BAQFWgjffcT9vkg/company-logo_200_200/company-logo_200_200/0/1732628266225/codex_earth_logo?e=2147483647&v=beta&t=UIejaiqLvhE5v2Y2SphCLlQuCP1gQRf50GOyCR8kqEg",
         role: "Web Development Intern",
-        company: "CodeEx Eart",
+        company: "CodeEx Earth-FlipSo Solution",
         date: "July 2023 - March 2024",
         desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
         skills: [
