@@ -100,7 +100,7 @@ export const projects = [
         title: "TataCliq-Clone",
         description:
             "This project is a frontend clone of the TataCliq e-commerce website built using React and Chakra UI. The app includes features like user authentication (Sign In/Sign Up), a dynamic shopping page with category filters, and a responsive layout.",
-        image: "",
+        image: "https://thegstco.com/cdn/shop/files/tataCliq-218168_grande.jpg?v=1711725652",
         tags: ["CSS", "JavaScript", "React JS", "Chakra Ui"],
         github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
         webapp: "https://tata-cliq-clone-n7d4.vercel.app/",
@@ -110,7 +110,7 @@ export const projects = [
         title: "Weather Application",
         description:
             "A simple and interactive weather application built with React, using the OpenWeatherMap API to fetch real-time weather data based on user input. The app displays the temperature, humidity, wind speed, and weather condition of a given city.",
-        image: "",
+        image: "https://cdn-icons-png.flaticon.com/512/3845/3845731.png",
         tags: ["React JS", "OpenWeatherAPI", "CSS", "JavaScript"],
         github: "https://github.com/SumitPal0572",
         webapp: "",
@@ -121,7 +121,7 @@ export const projects = [
         title: "Lit Vibes Clone",
         description:
             "A modern, responsive clone of the Lit Vibes landing page built using HTML, CSS, and JavaScript. This project replicates the aesthetic and functional design of the original website with a custom background, interactive footer, and clickable elements like logos and download buttons",
-        image: "",
+        image: "https://www.eu-startups.com/wp-content/uploads/2023/06/litvibelogo.jpg",
         tags: ["HTML", "CSS", "JavaScript"],
         github: "https://github.com/SumitPal0572",
         webapp: "https://lit-vibes-clone.vercel.app/",
