@@ -1,4 +1,5 @@
 import React from "react";
+import { projects } from "../../Constants";
 
 const Work = () => {
   return (
@@ -14,6 +15,23 @@ const Work = () => {
           A Showcase of the Projects, I have Worked on, Highlighting my skill
           and Experiences in various Technology.
         </p>
+      </div>
+      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project) => (
+          <div
+            key={projects.id}
+            className="border border-white bg:gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-trasnlate-y-2 transititon-transform duration-200"
+          >
+            <div>
+              {" "}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover rouned-xl"
+              />
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
