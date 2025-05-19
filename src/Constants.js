@@ -110,7 +110,7 @@ export const projects = [
         title: "Weather Application",
         description:
             "A simple and interactive weather application built with React, using the OpenWeatherMap API to fetch real-time weather data based on user input. The app displays the temperature, humidity, wind speed, and weather condition of a given city.",
-        image: "https://cdn-icons-png.flaticon.com/512/3845/3845731.png",
+        image: "https://github.com/user-attachments/assets/5fab2663-2f3e-4b8a-9881-491900afd78c",
         tags: ["React JS", "OpenWeatherAPI", "CSS", "JavaScript"],
         github: "https://github.com/Sumitpal0572/WeatherApp",
         webapp: "",
