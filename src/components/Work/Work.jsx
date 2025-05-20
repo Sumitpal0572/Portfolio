@@ -1,7 +1,18 @@
 import React from "react";
 import { projects } from "../../Constants";
+import { useState } from "react";
 
 const Work = () => {
+  const [selectedProject, setselectedProject] = useState(null);
+
+  const handleOpenModal = (project) => {
+    setselectedProject(project);
+  };
+
+  const handleCloseModel = (project) => {
+    setselectedProject(null);
+  };
+
   return (
     <section
       id="work"
@@ -19,7 +30,8 @@ const Work = () => {
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <div
-            key={projects.id}
+            key={project.id}
+            onClick={() => handleOpenModal(project)}
             className="border border-white bg:gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-trasnlate-y-2 transititon-transform duration-200"
           >
             <div className="p-4">
@@ -51,6 +63,32 @@ const Work = () => {
           </div>
         ))}
       </div>
+
+      {/* Model container  */}
+
+      {selectedProject && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
+          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
+            <div>
+              <button
+                onClick={handleCloseModel}
+                className="text-white text-3xl font-bold hover:text-purple-500"
+              >
+                &times;
+              </button>
+            </div>
+            <div className="flex flex-col">
+              <div className="w-full flex justify-center bg-gray-900 px-4">
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="lg:w-full w-[95%] object-conatin rounded-xl shadow-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
