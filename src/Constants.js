@@ -132,16 +132,16 @@ export const projects = [
 export const education = [
     {
         id: 0,
-        img: glaLogo,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRif1-mQ8A8xr-1OjiD7ZebYylennqkZpyIvw&s",
         school: "Swami Vivekanand Subharti University Meerut",
         date: "Mar 2020 - Aug-2022",
         grade: "78.48 % ",
-        desc: "I have completed my Master's degree (MCA) in Computer Applications from Meerut University. During my time at SVSU, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
+        desc: "I have completed my Master's degree (MCA) in Computer Applications from Meerut University. During my time at SVSU, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at SVSU University has been instrumental in shaping my technical abilities and professional growth.",
         degree: "Master of Computer Applications - MCA",
     },
     {
         id: 1,
-        img: bsaLogo,
+        img: "https://upload.wikimedia.org/wikipedia/en/5/5a/Chhatrapati_Shahu_Ji_Maharaj_University_logo.png",
         school: "Kanpur University",
         date: "Mar 2015 - Aug 2018",
         grade: "59.8%",
@@ -150,7 +150,7 @@ export const education = [
     },
     {
         id: 2,
-        img: vpsLogo,
+        img: "https://scontent.fvns1-4.fna.fbcdn.net/v/t39.30808-1/301570292_509363334329306_5715317042710437812_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=hMzHDyx4N7sQ7kNvwE6-Uw0&_nc_oc=AdnoczmgMQSXl95qed2LbZF2Bcbp8nl_nHFwKUK41xr_9STSgoXTcIY1O1GSUuAwFT64xhm_2EYDCpsht4AuzJcr&_nc_zt=24&_nc_ht=scontent.fvns1-4.fna&_nc_gid=f6wbxX0M4xhlrDzchgdBxg&oh=00_AfK23r9ex2HZ0iMjyUyztl3THef8ZJEcxaWFO0N4uAVsVA&oe=683346E0",
         school: "MVCIC-Prayagraj",
         date: "Apr 2014 - March 2015",
         grade: "64 %",
@@ -159,7 +159,7 @@ export const education = [
     },
     {
         id: 3,
-        img: vpsLogo,
+        img: "https://www.schoolmykids.com/smk-media/2019/04/Air-Force-School-Bamrauli-Prayagraj-Allahabad.png",
         school: "Air Force School Bamrauli Prayagraj",
         date: "Apr 2012 - March 2013",
         grade: "78 %",
