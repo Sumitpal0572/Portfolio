@@ -126,4 +126,44 @@ export const projects = [
         github: "https://github.com/Sumitpal0572/Lit-Vibes-clone",
         webapp: "https://lit-vibes-clone.vercel.app/",
     },
-];  
+];
+
+
+export const education = [
+    {
+        id: 0,
+        img: glaLogo,
+        school: "Swami Vivekanand Subharti University Meerut",
+        date: "Mar 2020 - Aug-2022",
+        grade: "78.48 % ",
+        desc: "I have completed my Master's degree (MCA) in Computer Applications from Meerut University. During my time at SVSU, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
+        degree: "Master of Computer Applications - MCA",
+    },
+    {
+        id: 1,
+        img: bsaLogo,
+        school: "Kanpur University",
+        date: "Mar 2015 - Aug 2018",
+        grade: "59.8%",
+        desc: "I completed my Bachelor's degree in Science (B.Sc.) from SPM College. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of Science and technology. From exploring Science  and Technology to diving into Core and Technology Systems, I gained practical insights into the world of science. My time at SPM College allowed me to work on projects that applied theoretical concepts to real-world problems.",
+        degree: "Bachelor of Science - BSC (Computer Science)",
+    },
+    {
+        id: 2,
+        img: vpsLogo,
+        school: "MVCIC-Prayagraj",
+        date: "Apr 2014 - March 2015",
+        grade: "64 %",
+        desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) .",
+        degree: "CBSE(XII) - PCM ",
+    },
+    {
+        id: 3,
+        img: vpsLogo,
+        school: "Air Force School Bamrauli Prayagraj",
+        date: "Apr 2012 - March 2013",
+        grade: "78 %",
+        desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
+        degree: "CBSE(X), Science with Computer Application",
+    },
+];
