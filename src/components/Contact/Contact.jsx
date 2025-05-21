@@ -5,13 +5,55 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+  const [isSent, setIsSent] = useState(false);
 
-  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_eopw8g6", // Replace with your EmailJS Service ID
+        "template_eqrllsa", // Replace with your EmailJS Template ID
+        form.current,
+        "6c_LolTehdOwTyjnc" // Replace with your EmailJS Public Key
+      )
+      .then(
+        () => {
+          setIsSent(true);
+          form.current.reset(); // Reset form fields after sending
+          toast.success("Message sent successfully! ✅", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "dark",
+          });
+        },
+        (error) => {
+          console.error("Error sending message:", error);
+          toast.error("Failed to send message. Please try again.", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "dark",
+          });
+        }
+      );
+  };
+
   return (
     <section
       id="contact"
       className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]"
     >
+      <ToastContainer />
+
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">CONTACT</h2>
