@@ -40,10 +40,11 @@ const About = () => {
           {/* about me */}
 
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            officia distinctio eaque eum odit obcaecati architecto error
-            consequuntur atque doloribus labore vitae laboriosam fugiat, magni
-            aperiam, sequi harum rerum eligendi.
+           I am a motivated and versatile individual, always eager to take on new
+            challenges. With a passion for learning I am dedicated to delivering
+            high-quality results. With a positive attitude and a growth mindset,
+            I am ready to make a meaningful contribution and achieve great
+            things.
           </p>
 
           {/* button for resume  */}
