@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { IoCloseSharp } from "react-icons/io5";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { useEffect } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
-
-  // check scroll and change navbar background
 
   useEffect(() => {
     const handlescroll = () => {
@@ -19,8 +15,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handlescroll);
     return () => window.removeEventListener("scroll", handlescroll);
   }, []);
-
-  // Smooth scroll function
 
   const handleMenuItemsClick = (sectionId) => {
     setActiveSection(sectionId);
@@ -49,7 +43,7 @@ const Navbar = () => {
       }`}
     >
       <div className="text-white py-5 flex justify-between items-center">
-        {/*   logo */}
+        {/* Logo */}
         <div className="text-lg font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
           <span className="text-white">Sumit</span>
@@ -58,15 +52,14 @@ const Navbar = () => {
           <span className="text-[#8245ec]">&gt;</span>
         </div>
 
-        {/* Desktop menu  */}
+        {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-gray-300">
           {menuItems.map((item) => (
             <li
               key={item.id}
               className={`cursor-pointer hover:text-[#8245ec] ${
                 activeSection === item.id ? "text-[#8245ec]" : ""
-              }
-            `}
+              }`}
             >
               <button onClick={() => handleMenuItemsClick(item.id)}>
                 {item.label}
@@ -75,21 +68,19 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* social media icons  */}
-
-        <div className="hidden md:flex space-x-4 ">
+        {/* Social Media Icons */}
+        <div className="hidden md:flex space-x-4">
           <a
             href="https://github.com/Sumitpal0572/Portfolio"
-            target="_black"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
             <FaGithub size={24} />
           </a>
-
           <a
             href="https://www.linkedin.com/in/sumit-kumar-pal-6b102b204/"
-            target="_black"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
@@ -97,8 +88,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* mobile menu icons */}
-
+        {/* Mobile Menu Icon */}
         <div className="md:hidden">
           {isOpen ? (
             <FiX
@@ -114,36 +104,34 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Items */}
-
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden ">
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
           <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
-            {menuItems.map((item) => {
+            {menuItems.map((item) => (
               <li
                 key={item.id}
-                className={` cursor-pointer hover:text-white ${
+                className={`cursor-pointer hover:text-white ${
                   activeSection === item.id ? "text-[#8245ec]" : ""
                 }`}
               >
                 <button onClick={() => handleMenuItemsClick(item.id)}>
                   {item.label}
                 </button>
-              </li>;
-            })}
-            <div className="flex space-x-4">
+              </li>
+            ))}
+            <div className="flex space-x-4 mt-2">
               <a
                 href="https://github.com/Sumitpal0572/Portfolio"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
               >
                 <FaGithub size={24} />
               </a>
-
               <a
                 href="https://www.linkedin.com/in/sumit-kumar-pal-6b102b204/"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
               >
