@@ -113,7 +113,7 @@ export const projects = [
         image: "https://github.com/user-attachments/assets/5fab2663-2f3e-4b8a-9881-491900afd78c",
         tags: ["React JS", "OpenWeatherAPI", "CSS", "JavaScript"],
         github: "https://github.com/Sumitpal0572/WeatherApp",
-        webapp: "",
+        webapp: "https://vercel.com/sumit-pals-projects-58a70c77/weather-app-9v7c",
     },
 
     {
