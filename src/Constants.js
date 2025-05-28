@@ -154,7 +154,7 @@ export const education = [
         school: "MVCIC-Prayagraj",
         date: "Apr 2014 - March 2015",
         grade: "64 %",
-        desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) .",
+        desc: "I completed my class 12 education from Air Force School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) .",
         degree: "CBSE(XII) - PCM ",
     },
     {
