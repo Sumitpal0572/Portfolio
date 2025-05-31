@@ -46,9 +46,9 @@ const Skill = () => {
                       alt={`${skill.name} logo`}
                       className="w-6 h-6 sm:w-8 sm:h-8 object-contain flex-shrink-0"
                     />
-                    <span className="text-xs sm:text-sm text-gray-300 whitespace-nowrap overflow-visible">
+                    {/* <span className="text-xs sm:text-sm text-gray-300 whitespace-nowrap overflow-visible">
                       {skill.name}
-                    </span>
+                    </span> */}
                   </div>
                 ))}
               </div>

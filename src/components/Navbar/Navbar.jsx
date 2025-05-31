@@ -52,7 +52,7 @@ const Navbar = () => {
           <span className="text-[#8245ec]">&gt;</span>
         </div>
 
-        {/* Desktop Menu (Hidden on small screens) */}
+        {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-gray-300">
           {menuItems.map((item) => (
             <li
@@ -68,7 +68,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Social Media Icons - Only Desktop */}
+        {/* Social Media - Desktop */}
         <div className="hidden md:flex space-x-4">
           <a
             href="https://github.com/Sumitpal0572/Portfolio"
@@ -88,7 +88,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile Menu Icon */}
+        {/* Hamburger - Mobile */}
         <div className="md:hidden z-50">
           {isOpen ? (
             <FiX
@@ -104,10 +104,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu (Shown only on small screens when open) */}
-      {isOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-[#050414] bg-opacity-80 backdrop-blur-lg rounded-b-lg shadow-lg z-40">
-          <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`md:hidden transition-all duration-300 ease-in-out ${
+          isOpen ? "block" : "hidden"
+        }`}
+      >
+        <div className="absolute top-0 left-0 w-full h-screen bg-[#050414] bg-opacity-95 backdrop-blur-lg flex flex-col items-center pt-24 z-40">
+          <ul className="flex flex-col items-center space-y-6 text-gray-300 text-lg">
             {menuItems.map((item) => (
               <li
                 key={item.id}
@@ -120,27 +124,27 @@ const Navbar = () => {
                 </button>
               </li>
             ))}
-            <div className="flex space-x-4 mt-2">
-              <a
-                href="https://github.com/Sumitpal0572/Portfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
-              >
-                <FaGithub size={24} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/sumit-kumar-pal-6b102b204/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
-              >
-                <FaLinkedin size={24} />
-              </a>
-            </div>
           </ul>
+          <div className="flex space-x-6 mt-8">
+            <a
+              href="https://github.com/Sumitpal0572/Portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-white"
+            >
+              <FaGithub size={28} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sumit-kumar-pal-6b102b204/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-white"
+            >
+              <FaLinkedin size={28} />
+            </a>
+          </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
