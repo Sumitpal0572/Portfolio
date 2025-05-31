@@ -8,12 +8,12 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handlescroll = () => {
+    const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener("scroll", handlescroll);
-    return () => window.removeEventListener("scroll", handlescroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleMenuItemsClick = (sectionId) => {
@@ -52,7 +52,7 @@ const Navbar = () => {
           <span className="text-[#8245ec]">&gt;</span>
         </div>
 
-        {/* Desktop Menu */}
+        {/* Desktop Menu (Hidden on small screens) */}
         <ul className="hidden md:flex space-x-8 text-gray-300">
           {menuItems.map((item) => (
             <li
@@ -68,7 +68,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Social Media Icons */}
+        {/* Social Media Icons - Only Desktop */}
         <div className="hidden md:flex space-x-4">
           <a
             href="https://github.com/Sumitpal0572/Portfolio"
@@ -89,7 +89,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="md:hidden">
+        <div className="md:hidden z-50">
           {isOpen ? (
             <FiX
               className="text-3xl text-[#8245ec] cursor-pointer"
@@ -104,9 +104,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu (Shown only on small screens when open) */}
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
+        <div className="md:hidden absolute top-16 left-0 w-full bg-[#050414] bg-opacity-80 backdrop-blur-lg rounded-b-lg shadow-lg z-40">
           <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
             {menuItems.map((item) => (
               <li

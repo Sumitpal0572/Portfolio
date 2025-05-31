@@ -154,7 +154,7 @@ export const education = [
         school: "MVCIC-Prayagraj",
         date: "Apr 2014 - March 2015",
         grade: "64 %",
-        desc: "I completed my class 12 education from Air Force School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) .",
+        desc: "I completed my class 12 education from Madhu Vachaspati Inter College , Prayagraj, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) .",
         degree: "CBSE(XII) - PCM ",
     },
     {
@@ -163,7 +163,7 @@ export const education = [
         school: "Air Force School Bamrauli Prayagraj",
         date: "Apr 2012 - March 2013",
         grade: "78 %",
-        desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
+        desc: "I completed my class 10 education from Air Force School Bamrauli, Prayagraj, under the CBSE board, where I studied Science with Computer.",
         degree: "CBSE(X), Science with Computer Application",
     },
 ];
