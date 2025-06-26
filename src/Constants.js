@@ -95,8 +95,20 @@ export const experiences = [
 
 
 export const projects = [
+
     {
         id: 0,
+        title: "Prescripto",
+        description:
+            "Prescripto is a full-stack web application that allows users to book online doctor appointments in real-time. Users can sign up, log in, select a doctor, and schedule appointments. Additionally, doctors and administrators have dedicated dashboards to manage bookings and availability.",
+        image: "https://prescripto-alpha-smoky.vercel.app/assets/header_img-DhAi3lLA.png",
+        tags: ["JavaScript", "React JS", "Tailwindcss", "Cloudnary", "Api", "Node.js", " MongoDB", "Express", "JWT"],
+        github: "https://github.com/Sumitpal0572/Prescripto",
+        webapp: "https://prescripto-alpha-smoky.vercel.app/",
+    },
+
+    {
+        id: 1,
         title: "TataCliq-Clone",
         description:
             "This project is a frontend clone of the TataCliq e-commerce website built using React and Chakra UI. The app includes features like user authentication (Sign In/Sign Up), a dynamic shopping page with category filters, and a responsive layout.",
@@ -106,7 +118,7 @@ export const projects = [
         webapp: "https://tata-cliq-clone-n7d4.vercel.app/",
     },
     {
-        id: 1,
+        id: 2,
         title: "Weather Application",
         description:
             "A simple and interactive weather application built with React, using the OpenWeatherMap API to fetch real-time weather data based on user input. The app displays the temperature, humidity, wind speed, and weather condition of a given city.",
@@ -117,7 +129,7 @@ export const projects = [
     },
 
     {
-        id: 2,
+        id: 3,
         title: "Lit Vibes Clone",
         description:
             "A modern, responsive clone of the Lit Vibes landing page built using HTML, CSS, and JavaScript. This project replicates the aesthetic and functional design of the original website with a custom background, interactive footer, and clickable elements like logos and download buttons",
